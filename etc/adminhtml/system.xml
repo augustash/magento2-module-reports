@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Customized dashboard reports.
+ *
+ * @author    Peter McWilliams <pmcwilliams@augustash.com>
+ * @copyright Copyright (c) 2020 August Ash (https://www.augustash.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="ash">
+            <group id="general">
+                <field id="reports_enabled" translate="label comment" type="select" sortOrder="9" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                    <label>Enable Integration Totals</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[When enabled, dashboard totals will include orders that are not fully invoiced/complete due to integration abandonment.]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

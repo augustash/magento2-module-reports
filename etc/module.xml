@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Customized dashboard reports.
+ *
+ * @author    Peter McWilliams <pmcwilliams@augustash.com>
+ * @copyright Copyright (c) 2020 August Ash (https://www.augustash.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Augustash_Reports">
+        <sequence>
+            <module name="Augustash_Backend"/>
+            <module name="Magento_Reports"/>
+            <module name="Magento_Sales"/>
+        </sequence>
+    </module>
+</config>

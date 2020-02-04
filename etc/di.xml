@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Customized dashboard reports.
+ *
+ * @author    Peter McWilliams <pmcwilliams@augustash.com>
+ * @copyright Copyright (c) 2020 August Ash (https://www.augustash.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Augustash\Reports\Api\ConfigInterface" type="Augustash\Reports\Model\Config"/>
+
+    <type name="Magento\Reports\Model\ResourceModel\Order\Collection">
+        <plugin name="augustash_reports_order_collection" type="Augustash\Reports\Plugin\ReportsOrderCollection" sortOrder="10" />
+    </type>
+</config>

@@ -1,0 +1,25 @@
+{
+  "name": "augustash/module-reports",
+  "description": "Customized dashboard reports for Magento 2",
+  "type": "magento2-module",
+  "version": "0.9.0",
+  "license": [
+    "proprietary"
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "augustash/module-backend": "*",
+    "magento/module-reports": "*",
+    "magento/module-sales": "*"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Augustash\\Reports\\": ""
+    }
+  }
+}
